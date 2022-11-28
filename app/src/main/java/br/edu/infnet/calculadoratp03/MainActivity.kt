@@ -25,13 +25,79 @@ class MainActivity : Activity() {
         val view = binding.root
         setContentView(view)
 
-
+        setup()
         // Initialize the Calculadora class and all the views
         mCalculadora = Calculadora()
         mResultTextView = findViewById(R.id.tvResultado)
         // Entradas:
 //        mOperandOneEditText = findViewById(R.id.operand_one_edit_text)
 //        mOperandTwoEditText = findViewById(R.id.operand_two_edit_text)
+    }
+
+    private fun setup() {
+        binding.btn0.setOnClickListener { AcrescentarUmaExpressao("0", true) }
+        binding.btn1.setOnClickListener { AcrescentarUmaExpressao("1", true) }
+        binding.btn2.setOnClickListener { AcrescentarUmaExpressao("2", true) }
+        binding.btn3.setOnClickListener { AcrescentarUmaExpressao("3", true) }
+        binding.btn4.setOnClickListener { AcrescentarUmaExpressao("4", true) }
+        binding.btn5.setOnClickListener { AcrescentarUmaExpressao("5", true) }
+        binding.btn6.setOnClickListener { AcrescentarUmaExpressao("6", true) }
+        binding.btn7.setOnClickListener { AcrescentarUmaExpressao("7", true) }
+        binding.btn8.setOnClickListener { AcrescentarUmaExpressao("8", true) }
+        binding.btn9.setOnClickListener { AcrescentarUmaExpressao("9", true) }
+
+        binding.btnPonto.setOnClickListener { AcrescentarUmaExpressao(".", true) }
+
+        // Operadores:
+        binding.btnSoma.setOnClickListener { AcrescentarUmaExpressao("+", false) }
+        binding.btnSubtracao.setOnClickListener { AcrescentarUmaExpressao("-", false) }
+        binding.btnMultiplicacao.setOnClickListener { AcrescentarUmaExpressao("×", false) }
+        binding.btnDivisao.setOnClickListener { AcrescentarUmaExpressao("÷", false) }
+
+        binding.btnLimpar.setOnClickListener {
+            binding.tvExpressao.text = ""
+            binding.tvResultado.text = ""
+        }
+
+        binding.btnBackspace.setOnClickListener {
+
+            val string = binding.tvExpressao.text.toString()
+
+            if(string.isNotBlank()){
+                binding.tvExpressao.text = string.substring(0, string.length-1)
+            }
+            binding.tvResultado.text = ""
+
+        }
+
+        binding.btnIgual.setOnClickListener {
+
+            try {
+
+
+            } catch(e: Exception) {
+
+            }
+
+        }
+
+    }
+
+    private fun AcrescentarUmaExpressao(string: String, limpar_dados: Boolean) {
+
+        if (binding.tvResultado.text.isNotEmpty()){
+           binding.tvExpressao.text = ""
+        }
+
+        if (limpar_dados){
+            binding.tvResultado.text = ""
+            binding.tvExpressao.append(string)
+        } else{
+            binding.tvExpressao.append(binding.tvResultado.text)
+            binding.tvExpressao.append(string)
+            binding.tvResultado.text = ""
+        }
+
     }
 
     // OnClick method called when the add Button is pressed.
