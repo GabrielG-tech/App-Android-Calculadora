@@ -1,38 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     android:gravity="center"
-    android:padding="8dp"
     android:orientation="vertical"
-    android:background="@color/black">
+    android:padding="8dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginHorizontal="4dp">
+        app:layout_constraintBottom_toBottomOf="parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/tvExpressao"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="end"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp"
-            android:text=""
-            android:textColor="@color/gray"
-            android:textSize="35dp" />
-    </LinearLayout>
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvExpressao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="35sp" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -47,16 +46,15 @@
                 android:maxLength="24"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
-                android:text="0"
+                android:text="@string/resposta"
                 android:textColor="@color/white"
-                android:textSize="60dp" />
+                android:textSize="60sp" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="4dp"
-                android:background="@color/darkgray"
                 android:layout_marginHorizontal="8dp"
-                />
+                android:background="@color/darkgray" />
 
         </LinearLayout>
 
@@ -70,39 +68,43 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="AC"
-                android:textColor="@color/orange"
                 android:backgroundTint="@color/black"
-                android:textSize="28dp" />
+                android:contentDescription="@string/clear_content"
+                android:text="@string/clear"
+                android:textColor="@color/orange"
+                android:textSize="28sp" />
 
             <ImageButton
                 android:id="@+id/btn_backspace"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/ic_back"
-                android:backgroundTint="@color/black" />
+                android:backgroundTint="@color/black"
+                android:contentDescription="@string/backspace_content"
+                android:src="@drawable/ic_back" />
 
             <Button
                 android:id="@+id/btn_decimal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="%"
-                android:textColor="@color/orange"
                 android:backgroundTint="@color/black"
-                android:textSize="28dp" />
+                android:contentDescription="@string/decimal_content"
+                android:text="@string/porcent"
+                android:textColor="@color/orange"
+                android:textSize="28sp" />
 
             <Button
                 android:id="@+id/btn_divisao"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="÷"
-                android:onClick="onDiv"
-                android:textColor="@color/orange"
                 android:backgroundTint="@color/black"
-                android:textSize="28dp" />
+                android:contentDescription="@string/operador_de_divisao_content"
+                android:onClick="onDiv"
+                android:text="@string/div"
+                android:textColor="@color/orange"
+                android:textSize="28sp" />
 
         </LinearLayout>
 
@@ -117,40 +119,48 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/black"
-                android:text="7"
+                android:contentDescription="@string/_7"
+                android:text="@string/_7"
                 android:textColor="@color/white"
-                android:textSize="28dp" />
+                android:textSize="28sp"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/btn8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="8"
-                android:textColor="@color/white"
                 android:backgroundTint="@color/black"
-                android:textSize="28dp" />
+                android:contentDescription="@string/_8"
+                android:text="@string/_8"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/btn9"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="9"
-                android:textColor="@color/white"
                 android:backgroundTint="@color/black"
-                android:textSize="28dp" />
+                android:contentDescription="@string/_9"
+                android:text="@string/_9"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/btn_multiplicacao"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="×"
-                android:textColor="@color/orange"
                 android:backgroundTint="@color/black"
+                android:contentDescription="@string/operador_de_multiplicacao_content"
                 android:onClick="onMul"
-                android:textSize="28dp" />
+                android:text="@string/mult"
+                android:textColor="@color/orange"
+                android:textSize="28sp"
+                style="?android:attr/buttonBarButtonStyle" />
 
         </LinearLayout>
 
@@ -164,41 +174,49 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="4"
-                android:textColor="@color/white"
                 android:backgroundTint="@color/black"
-                android:textSize="28dp" />
+                android:contentDescription="@string/_4"
+                android:text="@string/_4"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/btn5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="5"
-                android:textColor="@color/white"
                 android:backgroundTint="@color/black"
-                android:textSize="28dp" />
+                android:contentDescription="@string/_5"
+                android:text="@string/_5"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/btn6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="6"
-                android:textColor="@color/white"
                 android:backgroundTint="@color/black"
-                android:textSize="28dp" />
+                android:contentDescription="@string/_6"
+                android:text="@string/_6"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/btn_subtracao"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="-"
-                android:onClick="onSub"
-                android:textColor="@color/orange"
                 android:backgroundTint="@color/black"
-                android:textSize="28dp" />
+                android:contentDescription="@string/operador_de_subtracao_content"
+                android:onClick="onSub"
+                android:text="@string/sub"
+                android:textColor="@color/orange"
+                android:textSize="28sp"
+                style="?android:attr/buttonBarButtonStyle" />
 
         </LinearLayout>
 
@@ -212,41 +230,49 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="1"
-                android:textColor="@color/white"
                 android:backgroundTint="@color/black"
-                android:textSize="28dp" />
+                android:contentDescription="@string/_1"
+                android:text="@string/_1"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/btn2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="2"
-                android:textColor="@color/white"
                 android:backgroundTint="@color/black"
-                android:textSize="28dp" />
+                android:contentDescription="@string/_2"
+                android:text="@string/_2"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/btn3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="3"
-                android:textColor="@color/white"
                 android:backgroundTint="@color/black"
-                android:textSize="28dp" />
+                android:contentDescription="@string/_3"
+                android:text="@string/_3"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/btn_soma"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="+"
-                android:onClick="onAdd"
-                android:textColor="@color/orange"
                 android:backgroundTint="@color/black"
-                android:textSize="28dp" />
+                android:contentDescription="@string/operador_de_soma_content"
+                android:onClick="onAdd"
+                android:text="@string/add"
+                android:textColor="@color/orange"
+                android:textSize="28sp"
+                style="?android:attr/buttonBarButtonStyle" />
 
         </LinearLayout>
 
@@ -260,41 +286,44 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/ic_troca_tela"
-                android:backgroundTint="@color/black" />
+                android:backgroundTint="@color/black"
+                android:contentDescription="@string/trocar_tela_content"
+                android:src="@drawable/ic_troca_tela" />
 
             <Button
                 android:id="@+id/btn0"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="0"
-                android:textColor="@color/white"
                 android:backgroundTint="@color/black"
-                android:textSize="28dp" />
+                android:contentDescription="@string/_0"
+                android:text="@string/_0"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                tools:ignore="DuplicateSpeakableTextCheck" />
 
             <Button
                 android:id="@+id/btn_ponto"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="."
-                android:textColor="@color/white"
                 android:backgroundTint="@color/black"
-                android:textSize="28dp" />
+                android:contentDescription="@string/ponto"
+                android:text="@string/ponto"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
 
             <ImageButton
                 android:id="@+id/btnIgual"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/ic_igual"
-                android:layout_marginVertical="8dp"
-                android:layout_marginHorizontal="20dp"
-                />
+                android:contentDescription="@string/sinal_de_igual_content" />
 
         </LinearLayout>
-
 
 
     </LinearLayout>
