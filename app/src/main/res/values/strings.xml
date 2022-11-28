@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Calculadora TP03</string>
+
+    <!-- Button label for add operation -->
+    <string name="texteDeAdição">Add</string>
+
+    <!-- Button label for subtract operation -->
+    <string name="texteDeSubtração">Sub</string>
+
+    <!-- Button label for divide operation -->
+    <string name="texteDeDivisão">Div</string>
+
+    <!-- Button label for mul operation -->
+    <string name="texteDeMultiplicação">Mul</string>
+
+    <!-- Message for textview in case of errors  -->
+    <string name="mensagemDeErro">Error</string>
+
+</resources>
