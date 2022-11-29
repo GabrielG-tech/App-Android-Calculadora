@@ -65,9 +65,9 @@
 
             <Button
                 android:id="@+id/btn_limpar"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:backgroundTint="@color/black"
                 android:contentDescription="@string/clear_content"
                 android:text="@string/clear"
@@ -76,27 +76,17 @@
 
             <ImageButton
                 android:id="@+id/btn_backspace"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/black"
                 android:contentDescription="@string/backspace_content"
                 android:src="@drawable/ic_back" />
 
-            <Button
-                android:id="@+id/btn_decimal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:backgroundTint="@color/black"
-                android:contentDescription="@string/decimal_content"
-                android:text="@string/porcent"
-                android:textColor="@color/orange"
-                android:textSize="28sp" />
 
             <Button
                 android:id="@+id/btn_divisao"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/black"
@@ -278,21 +268,23 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/btnTrocarTela"
-                android:layout_width="match_parent"
+            <Button
+                android:id="@+id/btn_ponto"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/black"
-                android:contentDescription="@string/trocar_tela_content"
-                android:src="@drawable/ic_troca_tela" />
+                android:contentDescription="@string/ponto"
+                android:text="@string/ponto"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
 
             <Button
                 android:id="@+id/btn0"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/black"
@@ -302,26 +294,20 @@
                 android:textSize="28sp"
                 tools:ignore="DuplicateSpeakableTextCheck" />
 
-            <Button
-                android:id="@+id/btn_ponto"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:backgroundTint="@color/black"
-                android:contentDescription="@string/ponto"
-                android:text="@string/ponto"
-                android:textColor="@color/white"
-                android:textSize="28sp" />
 
-            <ImageButton
-                android:id="@+id/btnIgual"
-                android:layout_width="match_parent"
+
+            <Button
+                android:id="@+id/btn_igual"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/ic_igual"
-                android:contentDescription="@string/sinal_de_igual_content" />
+                android:layout_weight="2"
+                android:backgroundTint="@color/orange"
+                android:contentDescription="@string/sinal_de_igual_content"
+                android:text="@string/equal"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="34sp"
+                style="?android:attr/buttonBarButtonStyle" />
 
         </LinearLayout>
 

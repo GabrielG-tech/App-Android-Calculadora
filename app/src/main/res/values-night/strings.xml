@@ -42,5 +42,6 @@
     <string name="operador_de_soma_content">Operador de soma</string>
     <string name="trocar_tela_content">Trocar tela</string>
     <string name="sinal_de_igual_content">Sinal de igual</string>
+    <string name="equal">=</string>
 
 </resources>
