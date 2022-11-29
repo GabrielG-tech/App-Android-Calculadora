@@ -1,7 +1,6 @@
-package br.edu.infnet.calculadoratp03
+package br.edu.infnet.calculadoratp05
 
 
-import androidx.test.ext.junit.rules.ActivityScenarioRule
 import org.junit.Test
 import org.junit.Assert.*
 import org.junit.Rule

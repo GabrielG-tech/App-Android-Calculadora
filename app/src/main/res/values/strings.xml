@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Calculadora TP03</string>
+    <string name="app_name">Calculadora TP05</string>
 
     <!-- Button label for add operation -->
     <string name="texteDeAdição">Add</string>

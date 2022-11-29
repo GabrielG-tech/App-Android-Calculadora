@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'br.edu.infnet.calculadoratp03'
+    namespace 'br.edu.infnet.calculadoratp05'
     compileSdk 32
 
     defaultConfig {
-        applicationId "br.edu.infnet.calculadoratp03"
+        applicationId "br.edu.infnet.calculadoratp05"
         minSdk 27
         targetSdk 32
         versionCode 1
@@ -19,7 +19,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }

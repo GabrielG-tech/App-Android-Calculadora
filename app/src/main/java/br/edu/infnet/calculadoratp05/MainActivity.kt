@@ -1,8 +1,8 @@
-package br.edu.infnet.calculadoratp03
+package br.edu.infnet.calculadoratp05
 
 import android.app.Activity
 import android.os.Bundle
-import br.edu.infnet.calculadoratp03.databinding.ActivityMainBinding
+import br.edu.infnet.calculadoratp05.databinding.ActivityMainBinding
 import net.objecthunter.exp4j.ExpressionBuilder
 
 class MainActivity : Activity() {
