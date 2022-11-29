@@ -91,7 +91,6 @@
                 android:layout_weight="1"
                 android:backgroundTint="@color/black"
                 android:contentDescription="@string/operador_de_divisao_content"
-                android:onClick="onDiv"
                 android:text="@string/div"
                 android:textColor="@color/orange"
                 android:textSize="28sp" />
@@ -105,6 +104,7 @@
 
             <Button
                 android:id="@+id/btn7"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -112,11 +112,11 @@
                 android:contentDescription="@string/_7"
                 android:text="@string/_7"
                 android:textColor="@color/white"
-                android:textSize="28sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="28sp" />
 
             <Button
                 android:id="@+id/btn8"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -124,11 +124,11 @@
                 android:contentDescription="@string/_8"
                 android:text="@string/_8"
                 android:textColor="@color/white"
-                android:textSize="28sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="28sp" />
 
             <Button
                 android:id="@+id/btn9"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -136,21 +136,19 @@
                 android:contentDescription="@string/_9"
                 android:text="@string/_9"
                 android:textColor="@color/white"
-                android:textSize="28sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="28sp" />
 
             <Button
                 android:id="@+id/btn_multiplicacao"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/black"
                 android:contentDescription="@string/operador_de_multiplicacao_content"
-                android:onClick="onMul"
                 android:text="@string/mult"
                 android:textColor="@color/orange"
-                android:textSize="28sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="28sp" />
 
         </LinearLayout>
 
@@ -161,6 +159,7 @@
 
             <Button
                 android:id="@+id/btn4"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -168,11 +167,11 @@
                 android:contentDescription="@string/_4"
                 android:text="@string/_4"
                 android:textColor="@color/white"
-                android:textSize="28sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="28sp" />
 
             <Button
                 android:id="@+id/btn5"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -180,11 +179,11 @@
                 android:contentDescription="@string/_5"
                 android:text="@string/_5"
                 android:textColor="@color/white"
-                android:textSize="28sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="28sp" />
 
             <Button
                 android:id="@+id/btn6"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -192,21 +191,19 @@
                 android:contentDescription="@string/_6"
                 android:text="@string/_6"
                 android:textColor="@color/white"
-                android:textSize="28sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="28sp" />
 
             <Button
                 android:id="@+id/btn_subtracao"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/black"
                 android:contentDescription="@string/operador_de_subtracao_content"
-                android:onClick="onSub"
                 android:text="@string/sub"
                 android:textColor="@color/orange"
-                android:textSize="28sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="28sp" />
 
         </LinearLayout>
 
@@ -217,6 +214,7 @@
 
             <Button
                 android:id="@+id/btn1"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -224,11 +222,11 @@
                 android:contentDescription="@string/_1"
                 android:text="@string/_1"
                 android:textColor="@color/white"
-                android:textSize="28sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="28sp" />
 
             <Button
                 android:id="@+id/btn2"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -236,11 +234,11 @@
                 android:contentDescription="@string/_2"
                 android:text="@string/_2"
                 android:textColor="@color/white"
-                android:textSize="28sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="28sp" />
 
             <Button
                 android:id="@+id/btn3"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -248,21 +246,19 @@
                 android:contentDescription="@string/_3"
                 android:text="@string/_3"
                 android:textColor="@color/white"
-                android:textSize="28sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="28sp" />
 
             <Button
                 android:id="@+id/btn_soma"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/black"
                 android:contentDescription="@string/operador_de_soma_content"
-                android:onClick="onAdd"
                 android:text="@string/add"
                 android:textColor="@color/orange"
-                android:textSize="28sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="28sp" />
 
         </LinearLayout>
 
@@ -273,17 +269,19 @@
 
             <Button
                 android:id="@+id/btn_ponto"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/black"
-                android:contentDescription="@string/ponto"
+                android:contentDescription="@string/ponto_content"
                 android:text="@string/ponto"
                 android:textColor="@color/white"
                 android:textSize="28sp" />
 
             <Button
                 android:id="@+id/btn0"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -295,19 +293,18 @@
                 tools:ignore="DuplicateSpeakableTextCheck" />
 
 
-
             <Button
                 android:id="@+id/btn_igual"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
-                android:backgroundTint="@color/orange"
+                android:backgroundTint="@color/darkorange"
                 android:contentDescription="@string/sinal_de_igual_content"
                 android:text="@string/equal"
-                android:textStyle="bold"
                 android:textColor="@color/white"
                 android:textSize="34sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textStyle="bold" />
 
         </LinearLayout>
 

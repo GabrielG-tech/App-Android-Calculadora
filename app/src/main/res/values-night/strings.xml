@@ -33,6 +33,7 @@
     <string name="_3">3</string>
     <string name="resposta">0</string>
     <string name="ponto">.</string>
+    <string name="ponto_content">Ponto</string>
     <string name="backspace_content">Botão de Excluir um item</string>
     <string name="clear_content">Limpar memória</string>
     <string name="decimal_content">Transformar em decimal</string>
