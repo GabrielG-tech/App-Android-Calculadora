@@ -16,13 +16,6 @@ class MainActivity : Activity() {
         setContentView(view)
 
         setupOnClickListener()
-
-//        // Initialize the Calculadora class and all the views
-//        mCalculadora = Calculadora()
-//        mResultTextView = binding.tvResultado
-//        // Entradas:
-//        mOperandOneEditText = findViewById(R.id.operand_one_edit_text)
-//        mOperandTwoEditText = findViewById(R.id.operand_two_edit_text)
     }
 
     private fun setupOnClickListener() {
