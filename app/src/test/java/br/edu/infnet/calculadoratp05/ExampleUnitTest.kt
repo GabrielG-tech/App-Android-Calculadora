@@ -1,8 +1,10 @@
 package br.edu.infnet.calculadoratp05
 
 
+import androidx.test.ext.junit.rules.ActivityScenarioRule
 import org.junit.Test
 import org.junit.Assert.*
+import org.junit.Before
 import org.junit.Rule
 import org.junit.runner.RunWith
 import org.junit.runners.JUnit4
@@ -12,13 +14,20 @@ import org.junit.runners.JUnit4
 
 @RunWith(JUnit4::class)
 class ExampleUnitTest {
+
+    private var Calculadora: MainActivity? = null
+
     // @JvmField
-    @Rule
-    // var activityActivityTestRule = ActivityScenarioRule<MainActivity>(MainActivity)
+    @Before
+    fun setUp() {
+        var Calculadora = MainActivity()
+    }
 
     @Test
-    fun add(){
-        assertEquals(4, 2 + 2)
+    fun teste() {
+
     }
+
+
 
 }
